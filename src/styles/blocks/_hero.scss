@@ -24,7 +24,7 @@
             height: rem(410px);
             bottom: 105px;
             right: -180px;
-            background: url('../img/Superman.png') center center / contain no-repeat;
+            background: url('../img/Superman.webp') center center / contain no-repeat;
             z-index: -1;
 
             @include phones {
@@ -51,7 +51,7 @@
             height: 653px;
             top:-21px;
             left: -300px;
-            background: url('../img/ellipse.png') center center / contain no-repeat;
+            background: url('../img/ellipse.webp') center center / contain no-repeat;
             z-index: -1;
 
             @include desktops {
@@ -75,7 +75,7 @@
         height: 740px;
         bottom: -250px;
         right: -345px;
-        background: url('../img/ellipse__small.png') center center / contain no-repeat;
+        background: url('../img/ellipse__small.webp') center center / contain no-repeat;
         z-index: -1;
 
         @include desktops {
@@ -146,7 +146,7 @@
             width: 620px;
             height: 100%;
             z-index: -1;
-            background: url('../img/stars.png') left bottom / contain  no-repeat;
+            background: url('../img/stars.webp') left bottom / contain  no-repeat;
         }
     }
 

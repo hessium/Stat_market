@@ -40,6 +40,18 @@
             width: 14px;
             height: 12px;
         }
+
+        &:hover{
+            color:$purple;
+            opacity: 0.6;
+        }
+
+        &--education {
+            &:hover{
+                color:$purple;
+                opacity: 0.6;
+            }
+        }
     }
     
     &__sub {
