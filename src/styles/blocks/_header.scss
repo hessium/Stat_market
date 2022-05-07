@@ -1,0 +1,124 @@
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(66px);
+
+    @media screen and (max-width: 1250px) {
+      justify-content: space-between;
+    }
+
+     @include phones {
+       justify-content: flex-start;
+     }
+ 
+    @include tablets {
+      margin-bottom: rem(46px);
+    }
+
+    &__logo{
+        margin-right:31px; 
+        width: rem(489px);
+        height: 80px;
+        display: flex;
+        align-items: center;
+
+        
+        @media screen and (max-width: 1600px) {
+          margin-right: 0;
+        }
+
+        @include desktops {
+          margin-right: 28px;
+          width: rem(380px); 
+          height: 62px;
+        }
+
+        @media screen and (max-width: 1040px) {          
+          margin-right: rem(10px);
+        }
+
+        @include tablets {
+          width: rem(372px);
+        }
+
+        @media screen and (max-width: 600px) {
+         min-width: rem(140px);
+         height: 32px;
+        }
+    
+
+        &--link {
+          margin-right: 44px;
+
+          @include desktops {
+            margin-right: 34px;
+          }
+
+          @media screen and (max-width: 600px) {
+            margin-right: 0;
+            }
+        }
+
+        &--icon {
+          width: rem(241px);
+          height: rem(58px);
+
+
+          @include desktops {
+            width: rem(187px);
+            height: rem(44px);
+          }
+        }
+
+        &--desc {
+          font-size: 14px;
+          line-height: 18px;
+          position: relative;
+
+          @include desktops {
+            font-size: 10px;
+            line-height: 14px;
+          }
+
+          &::before {
+            position: absolute;
+            width: 1px;
+            height: 62px;
+            left: -22px;
+            top: -12px;
+            content: "";
+            background-color: rgba(51, 26, 47, 0.5);
+
+            @include desktops {
+              left: -19px;
+            }
+          }
+
+          @media screen and (max-width: 600px) {
+           display: none;
+           }
+        }
+
+        
+    }
+
+    &__menu {
+        margin-right: 218px; 
+
+        @media screen and (max-width: 1600px) {
+            margin-right: 10px;
+          }
+
+          @include desktops {
+              margin-right: 100px;
+          }
+
+          @media screen and (max-width: 1250px) {
+            margin-right: rem(10px);
+          }
+
+          @include tablets {
+            display: none;
+            }
+    }
+}

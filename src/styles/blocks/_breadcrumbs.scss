@@ -1,0 +1,41 @@
+.breadcrumbs {
+    margin-bottom: 13px;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: rem(26px);
+        position: relative;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(51, 26, 47, 0.5);
+
+
+        &:after {
+            content: '';
+            background-color: #9A9A9A;
+            height: 1px;
+            width: 10px;
+            position: absolute;
+            top:12px;
+            right: -15px;
+           
+           &:last-child {
+            margin-right: 0;
+          
+        }
+          }
+
+        &:last-child {
+            margin-right: 0;
+
+          &::after {
+              display: none;
+          }
+           
+        }
+    }
+}
+

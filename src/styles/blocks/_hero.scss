@@ -1,0 +1,225 @@
+.hero{
+    padding-top: 33px;
+    margin-bottom: 73px;
+    padding-left: 6px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+    @include desktops {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @include tablets {
+        margin-bottom: 32px;
+        position: relative;
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: rem(410px);
+            height: rem(410px);
+            bottom: 105px;
+            right: -180px;
+            background: url('../img/Superman.png') center center / contain no-repeat;
+            z-index: -1;
+
+            @include phones {
+                width: rem(245px);
+                height: rem(245px);
+                top: 96px;
+                right: -100px;
+            }
+        }
+    }
+
+    @include phones {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    &-section {
+        position: relative;          
+        
+    
+        &:before {
+            position: absolute;
+            content:  '';
+            width:686px;
+            height: 653px;
+            top:-21px;
+            left: -300px;
+            background: url('../img/ellipse.png') center center / contain no-repeat;
+            z-index: -1;
+
+            @include desktops {
+                
+                width:450px;
+                height: 453px; 
+                top: 0;
+                left: -235px;
+            }
+
+            @include tablets {
+                display: none;
+            }
+
+        }
+
+        &::after {
+        position: absolute;
+        content: "";
+        width: 730px;
+        height: 740px;
+        bottom: -250px;
+        right: -345px;
+        background: url('../img/ellipse__small.png') center center / contain no-repeat;
+        z-index: -1;
+
+        @include desktops {
+            display: none;
+        }
+      }
+    }
+   
+    &__content {
+        display: flex;
+        width: 100%;
+    }
+
+    &__block {
+
+        &--text {
+            width: 58%;
+            margin-right: 60px;
+
+            @include tablets {
+                width:100%;
+                margin-right: 0;
+            }
+
+            
+        }
+
+        &--img {
+            width: 37%;
+
+
+            @include tablets {
+                display: none;
+            }
+        }
+    }
+
+    &__title {
+        font-size:rem(55px);
+        line-height: rem(80px);
+        font-weight: 700;
+        margin-bottom: rem(22px);
+
+        @include desktops {
+            font-size: rem(46px);
+            line-height: rem(65px);
+            margin-bottom: rem(41px);
+        }
+
+        @include phones {
+            width: 60%;
+            font-size: rem(26px);
+            line-height: rem(39px);
+            margin-bottom: rem(24px);
+        }
+    }
+
+    &__picture {
+        width: 560px;
+        min-height:560px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -42px;
+            left: -30px;
+            width: 620px;
+            height: 100%;
+            z-index: -1;
+            background: url('../img/stars.png') left bottom / contain  no-repeat;
+        }
+    }
+
+    &__price {
+        display: flex;
+        font-size: rem(20px);       
+        line-height: rem(25px);
+        font-weight: 600;
+        margin-bottom: rem(18px);
+        align-items: center;
+
+        @include desktops {
+            margin-bottom: rem(40px);
+        }
+
+        
+        @include tablets {
+            margin-bottom: rem(17px);
+        }
+
+        &--elem {
+            width: rem(48px);
+            height: rem(47px);
+            margin-right: rem(25px);   
+        }
+        &--text {
+            font-size: rem(27px);
+            line-height: 30px;
+        }
+
+        &--num {
+            font-weight: 700;
+            font-size: rem(35px);
+            line-height: rem(50px);
+            color: $purple;
+            margin-right: 5px;
+        }
+    }
+
+    &__text {
+
+        @include tablets {
+            width: 60%;
+        }
+
+        
+    @media screen and (max-width: 600px) {
+       width: 100%;
+      }
+    }
+
+    &__desc {
+        font-size: rem(25px);
+        line-height: rem(40px);
+        margin-bottom: rem(15px);
+        padding-right: 16px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include desktops {
+            font-size: rem(20px);
+            line-height: rem(32px);
+            margin-bottom: rem(15px);
+            padding-right: 16px;
+        }
+
+        @include phones {
+            font-size: rem(18px);
+            line-height: rem(28px);
+            margin-bottom: rem(10px);
+            padding-right: 16px;
+        }
+    }
+}

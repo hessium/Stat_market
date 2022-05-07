@@ -1,0 +1,120 @@
+.list {
+    display: flex;
+
+    @media screen and (max-width: 1000px) {
+       flex-wrap: wrap;
+       padding-left: 79px;
+       padding-right: 79px;
+       justify-content: center;
+       }
+
+       @media screen and (max-width: 764px) {
+        padding-left: 35px;
+        padding-right: 35px; 
+       }
+
+    &__item{
+        width: 23%;
+        margin-right: 130px;
+
+        @include desktops {
+            margin-right: 83px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @media screen and (max-width: 1000px) {
+            width: 45%;
+            margin-right: 30px;
+
+            &:nth-child(2){
+                margin-right: 0;
+                margin-bottom: 82px;
+
+            }
+           }
+
+          @include tablets {
+            width: 45%;
+            margin-right: 56px;
+
+            &:nth-child(2){
+                margin-right: 0;
+                margin-bottom: 82px;
+
+            }
+
+            @media screen and (max-width: 764px) {
+                width: 100%;
+               align-items: center;
+               display: flex;
+               flex-direction: column;
+               text-align: center;
+               margin-right: 0;
+               margin-bottom: 40px;
+               }
+           }
+
+        &--img {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $purple;
+            border-radius: 15px;
+            margin-bottom: 30px;
+
+            @include desktops {
+                width: 60px;
+                height: 60px;              
+            }
+
+            @include tablets {
+                margin-bottom: 20px;
+            }
+        }
+
+        &--icon{
+            width: 48px;
+            height: 48px;
+
+            
+            @include desktops {
+                width: 38px;
+                height: 38px;
+              
+            }
+        }
+
+        &--title {
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 600;
+            margin-bottom: 16px;
+
+            @include desktops {
+                font-size: 20px;
+                line-height: 30px;
+              
+            }
+
+            @include tablets {
+                margin-bottom: 10px;
+            }
+        }
+
+        &--desc {
+            font-size: 18px;
+            line-height: 29px;
+
+            @include desktops {
+                font-size: 16px;
+                line-height: 25px;
+              
+            }
+        }
+    }
+}

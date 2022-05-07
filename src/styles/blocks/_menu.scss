@@ -1,0 +1,63 @@
+.menu {
+
+   
+   
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: rem(50px);
+        font-size: rem(24px);
+        line-height: 1.5;
+        position: relative;
+
+        @include desktops {
+            font-size: rem(18px);
+            line-height: rem(35px);
+            margin-right: rem(40px);
+
+            @media screen and (max-width: 1040px) {
+                font-size: rem(14px);
+                line-height: rem(25px);
+                margin-right: rem(10px);
+              }
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    
+    &__link {
+        display: flex;
+
+        &--icon {
+            margin-left: 11px;
+        }
+
+        &--elem {
+            width: 14px;
+            height: 12px;
+        }
+    }
+    
+    &__sub {
+
+        &--content{
+            display: none;
+            position: absolute;
+           top: 48;
+           left: 0;
+        }
+
+        &--list {
+            height: 150px;
+            width: 200px;
+        }
+    }
+}
+
+.menu__sub--content.active {
+    display: flex;
+}

@@ -1,0 +1,31 @@
+//size
+$containerWidth: 1530px;
+$baseFontSize: 16px;
+
+$desktops:1280px; 
+$tablets: 768px;
+$phones: 500px;
+
+
+//colors
+$purple: #CF51CE;
+$blue:#4D77FF;
+$grey: #F5F5F5;
+$white: #ffffff;
+$black:#0B0A0D;
+$green: #75FF77;
+
+//width
+$normal: 400;
+$medium: 500;
+$semi-bold:600;
+$bold:700;
+
+
+
+
+@import "layout/normalize.scss";
+@import "media.scss"; 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
+@import "layout/base.scss";
+@import "blocks/*.scss";

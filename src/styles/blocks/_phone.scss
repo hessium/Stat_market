@@ -1,0 +1,55 @@
+.phone-number {
+    font-size: rem(24px);
+    margin-right: rem(94px); 
+    line-height: rem(35px);    
+    display: flex;
+    align-items: center;   
+    flex-shrink: 0;
+
+   @include desktops {
+    font-size: rem(18px);
+    margin-right: rem(80px);
+    line-height:  rem(35px); 
+   }
+
+   @media screen and (max-width: 1250px) {
+    margin-right: rem(40px);
+  }
+
+  @media screen and (max-width: 1040px) {
+    font-size: rem(14px);
+    line-height: rem(25px);
+    margin-right: rem(10px);
+  }
+
+   @include tablets {
+    display: none;
+    }
+  
+   &__icon {
+    margin-right: rem(14px);
+
+    @include desktops {
+      margin-right: rem(4px);
+    }
+   }
+    &__icon-elem {
+      width: rem(19px);
+      height: rem(19px);
+     
+      @include desktops {
+        width: rem(16px);
+      height: rem(16px);
+      }
+      &:hover {
+        fill: #DD51D4;
+      }
+    }
+  
+    &__text {
+  
+      &:hover {
+      color: #DD51D4;
+      }
+    }
+  }

@@ -1,0 +1,71 @@
+.education {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 131px;
+
+    @include tablets {
+        margin-bottom: 85px;
+        margin-top: 58px;
+    }
+    
+    @include tablets {
+        margin-top: 50px;
+    }
+
+    &__title{
+        font-size: 48px;
+        line-height: 64px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        width: 50%;
+        text-align: center;   
+        
+        @include desktops {
+            font-size: 40px; 
+            width: 60%;        
+        }
+
+        @include tablets {
+            width: 100%;
+        }
+
+        @include phones {
+            font-size: 24px;
+            line-height: 36px; 
+        }
+    }
+
+    &__content {
+        padding-left: 8px;
+
+        @include tablets {
+            padding-left: 0;
+        }
+    }
+
+    &__desc {
+        font-size: 24px;
+        line-height: 40px;
+        width: 60%;
+        text-align: center;
+        margin-bottom: 85px;
+
+        @include desktops {
+            font-size: 20px;
+          
+        }
+
+        @include tablets {
+            width: 100%;
+            margin-bottom: 80px;
+        }
+
+        @include phones {
+            font-size: 18px;
+            line-height: 29px;
+            margin-bottom: 50px; 
+        }
+    }
+}
